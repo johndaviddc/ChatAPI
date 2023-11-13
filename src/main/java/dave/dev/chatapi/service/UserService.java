@@ -1,5 +1,6 @@
 package dave.dev.chatapi.service;
 
+import dave.dev.chatapi.model.User;
 import dave.dev.chatapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,6 +12,10 @@ public class UserService {
     @Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
+    }
+
+    public User createUser(User user) {
+        return userRepository.save(user);
     }
 
     
