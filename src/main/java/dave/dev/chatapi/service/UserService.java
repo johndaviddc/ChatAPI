@@ -1,5 +1,6 @@
 package dave.dev.chatapi.service;
 
+import dave.dev.chatapi.exception.UserNotFoundException;
 import dave.dev.chatapi.model.User;
 import dave.dev.chatapi.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
