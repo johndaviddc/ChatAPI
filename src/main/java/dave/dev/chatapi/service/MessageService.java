@@ -17,4 +17,9 @@ public class MessageService {
     public Message saveMessage(Message message) {
         return messageRepository.save(message);
     }
+
+    public Message getMessageById(Long messageId) {
+        return messageRepository.findById(messageId)
+                .orElseThrow(() -> new MessageNotFoundException("Message not found"));
+    }
 }
