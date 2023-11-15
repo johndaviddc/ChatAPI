@@ -1,5 +1,6 @@
 package dave.dev.chatapi.service;
 
+import dave.dev.chatapi.exception.MessageNotFoundException;
 import dave.dev.chatapi.model.Message;
 import dave.dev.chatapi.repository.MessageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
